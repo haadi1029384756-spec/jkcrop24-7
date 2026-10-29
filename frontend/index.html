@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f8f5" />
+  <title>JKCrop 24/7 — Farmer workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="JKCrop home"><span class="brand-mark">jk<span>•</span></span><span>JKCrop <small>24/7</small></span></a>
+      <div class="workspace-label">FARMER WORKSPACE</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-page="overview"><span class="nav-icon">⌂</span>Overview</button>
+        <button class="nav-item" data-page="reports"><span class="nav-icon">◉</span>Disease reports <span class="nav-count" id="report-count">2</span></button>
+        <button class="nav-item" data-page="guides"><span class="nav-icon">▤</span>Crop guides</button>
+        <button class="nav-item" data-page="assistant"><span class="nav-icon">✳</span>Farm assistant</button>
+        <button class="nav-item" data-page="alerts"><span class="nav-icon">♧</span>Alerts &amp; events</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="offline-card"><span class="status-dot"></span><div><strong>Demo mode</strong><small>Your changes stay on this device</small></div></div>
+        <button class="profile" id="profile-button"><span class="avatar">TA</span><span class="profile-copy"><strong id="profile-name">Tariq Ahmad</strong><small id="profile-role">Digital farmer</small></span><span class="chevron">⌄</span></button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open menu">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="page-crumb">Overview</strong></div>
+        <div class="top-actions"><div class="weather"><span class="weather-icon">☀</span><span><strong>18°</strong><small>Srinagar</small></span></div><button class="icon-button" data-page="alerts" aria-label="Notifications">♧<i></i></button><div class="language-wrap"><select id="language" aria-label="Language"><option>English</option><option>Hindi</option><option>Kashmiri</option><option>Dogri</option></select></div></div>
+      </header>
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop hidden" id="modal"></div>
+  <script src="app.js"></script>
+</body>
+</html>

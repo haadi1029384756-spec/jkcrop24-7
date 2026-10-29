@@ -1,0 +1,37 @@
+JKCrop 24/7 browser demo
+=======================
+
+Start the local test app
+------------------------
+1. Install Node.js if it is not already installed.
+2. Open a terminal in the frontend folder.
+3. Run: node server.js
+4. Visit: http://localhost:4173
+
+No npm package installation, database, or external service is needed. Create an
+account with a phone number or email and a password of at least 8 characters,
+or choose the sample workspace. Accounts and app changes are stored on this
+device; the password is hashed in the browser before it is saved.
+
+Windows executable
+------------------
+Run frontend/dist/JKCrop247.exe. It opens the app in a Microsoft Edge app
+window; Node.js is not needed. On first run, the app files are copied to
+%LOCALAPPDATA%\JKCrop247. The executable is a Windows x64 build.
+
+What you can try
+----------------
+- Create a crop disease report, with or without choosing a photo.
+- Search and filter reports and crop guides.
+- Ask the sample farm assistant questions; try voice input where supported.
+- Review local weather, crop-health, farmer-event, and scheme alerts.
+- Open the profile menu to switch between farmer, researcher, and administrator
+  views. In administrator view, you can add or remove demo alerts.
+- Choose Reset sample data from the profile menu to restore the starting demo.
+
+Demo limitations
+----------------
+This is a local test app. Accounts and app information stay in the browser on
+this device and are not synchronized with the PostgreSQL backend or other
+devices. Assistant answers and alerts are sample content, not live expert
+advice. The farmer/researcher/administrator view switch is for testing only.

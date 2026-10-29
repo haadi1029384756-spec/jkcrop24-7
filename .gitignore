@@ -1,0 +1,14 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Dependencies and generated files
+node_modules/
+frontend/dist/
+frontend/data/
+backend/uploads/
+*.log
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,9 @@
+{
+  "name": "jkcrops247-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local browser demo for testing JKCrop24/7 farmer services",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
